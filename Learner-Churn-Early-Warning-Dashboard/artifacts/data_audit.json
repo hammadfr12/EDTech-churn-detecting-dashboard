@@ -1,0 +1,367 @@
+{
+  "data_dir": "data/raw",
+  "source_url": "https://analyse.kmi.open.ac.uk/open_dataset",
+  "mirror_url": "https://archive.ics.uci.edu/static/public/349/open+university+learning+analytics+dataset.zip",
+  "tables": [
+    {
+      "filename": "courses.csv",
+      "rows": 22,
+      "columns": [
+        "code_module",
+        "code_presentation",
+        "module_presentation_length"
+      ],
+      "dtypes": {
+        "code_module": "str",
+        "code_presentation": "str",
+        "module_presentation_length": "int64"
+      },
+      "null_rates": {
+        "code_module": 0.0,
+        "code_presentation": 0.0,
+        "module_presentation_length": 0.0
+      },
+      "unique_key": [
+        "code_module",
+        "code_presentation"
+      ],
+      "duplicate_rows_on_key": 0,
+      "unique_keys_observed": 22,
+      "table": "courses",
+      "description": "Course presentation metadata and length in days.",
+      "declared_required_columns": [
+        "code_module",
+        "code_presentation",
+        "module_presentation_length"
+      ],
+      "missing_required_columns": []
+    },
+    {
+      "filename": "assessments.csv",
+      "rows": 206,
+      "columns": [
+        "code_module",
+        "code_presentation",
+        "id_assessment",
+        "assessment_type",
+        "date",
+        "weight"
+      ],
+      "dtypes": {
+        "code_module": "str",
+        "code_presentation": "str",
+        "id_assessment": "int64",
+        "assessment_type": "str",
+        "date": "float64",
+        "weight": "float64"
+      },
+      "null_rates": {
+        "code_module": 0.0,
+        "code_presentation": 0.0,
+        "id_assessment": 0.0,
+        "assessment_type": 0.0,
+        "date": 0.053398,
+        "weight": 0.0
+      },
+      "unique_key": [
+        "id_assessment"
+      ],
+      "duplicate_rows_on_key": 0,
+      "unique_keys_observed": 206,
+      "date_min": 12,
+      "date_max": 261,
+      "date_negative_rows": 0,
+      "table": "assessments",
+      "description": "Assessment calendar. `date` is the due day offset, '?' for most exams.",
+      "declared_required_columns": [
+        "code_module",
+        "code_presentation",
+        "id_assessment",
+        "assessment_type",
+        "date",
+        "weight"
+      ],
+      "missing_required_columns": []
+    },
+    {
+      "filename": "vle.csv",
+      "rows": 6364,
+      "columns": [
+        "id_site",
+        "code_module",
+        "code_presentation",
+        "activity_type",
+        "week_from",
+        "week_to"
+      ],
+      "dtypes": {
+        "id_site": "int64",
+        "code_module": "str",
+        "code_presentation": "str",
+        "activity_type": "str",
+        "week_from": "float64",
+        "week_to": "float64"
+      },
+      "null_rates": {
+        "id_site": 0.0,
+        "code_module": 0.0,
+        "code_presentation": 0.0,
+        "activity_type": 0.0,
+        "week_from": 0.823853,
+        "week_to": 0.823853
+      },
+      "unique_key": [
+        "id_site"
+      ],
+      "duplicate_rows_on_key": 0,
+      "unique_keys_observed": 6364,
+      "table": "vle",
+      "description": "VLE activity catalogue.",
+      "declared_required_columns": [
+        "id_site",
+        "code_module",
+        "code_presentation",
+        "activity_type"
+      ],
+      "missing_required_columns": []
+    },
+    {
+      "filename": "studentInfo.csv",
+      "rows": 32593,
+      "columns": [
+        "code_module",
+        "code_presentation",
+        "id_student",
+        "gender",
+        "region",
+        "highest_education",
+        "imd_band",
+        "age_band",
+        "num_of_prev_attempts",
+        "studied_credits",
+        "disability",
+        "final_result"
+      ],
+      "dtypes": {
+        "code_module": "str",
+        "code_presentation": "str",
+        "id_student": "int64",
+        "gender": "str",
+        "region": "str",
+        "highest_education": "str",
+        "imd_band": "str",
+        "age_band": "str",
+        "num_of_prev_attempts": "int64",
+        "studied_credits": "int64",
+        "disability": "str",
+        "final_result": "str"
+      },
+      "null_rates": {
+        "code_module": 0.0,
+        "code_presentation": 0.0,
+        "id_student": 0.0,
+        "gender": 0.0,
+        "region": 0.0,
+        "highest_education": 0.0,
+        "imd_band": 0.034087,
+        "age_band": 0.0,
+        "num_of_prev_attempts": 0.0,
+        "studied_credits": 0.0,
+        "disability": 0.0,
+        "final_result": 0.0
+      },
+      "unique_key": [
+        "code_module",
+        "code_presentation",
+        "id_student"
+      ],
+      "duplicate_rows_on_key": 0,
+      "unique_keys_observed": 32593,
+      "table": "studentInfo",
+      "description": "Learner attributes, enrolment and final outcome. One row per learner-course.",
+      "declared_required_columns": [
+        "code_module",
+        "code_presentation",
+        "id_student",
+        "final_result"
+      ],
+      "missing_required_columns": []
+    },
+    {
+      "filename": "studentRegistration.csv",
+      "rows": 32593,
+      "columns": [
+        "code_module",
+        "code_presentation",
+        "id_student",
+        "date_registration",
+        "date_unregistration"
+      ],
+      "dtypes": {
+        "code_module": "str",
+        "code_presentation": "str",
+        "id_student": "int64",
+        "date_registration": "float64",
+        "date_unregistration": "float64"
+      },
+      "null_rates": {
+        "code_module": 0.0,
+        "code_presentation": 0.0,
+        "id_student": 0.0,
+        "date_registration": 0.001381,
+        "date_unregistration": 0.690977
+      },
+      "unique_key": [
+        "code_module",
+        "code_presentation",
+        "id_student"
+      ],
+      "duplicate_rows_on_key": 0,
+      "unique_keys_observed": 32593,
+      "date_registration_min": -322,
+      "date_registration_max": 167,
+      "date_registration_negative_rows": 32312,
+      "date_unregistration_min": -365,
+      "date_unregistration_max": 444,
+      "date_unregistration_negative_rows": 2678,
+      "table": "studentRegistration",
+      "description": "Registration and unregistration day offsets.",
+      "declared_required_columns": [
+        "code_module",
+        "code_presentation",
+        "id_student",
+        "date_registration",
+        "date_unregistration"
+      ],
+      "missing_required_columns": []
+    },
+    {
+      "filename": "studentAssessment.csv",
+      "rows": 173912,
+      "columns": [
+        "id_assessment",
+        "id_student",
+        "date_submitted",
+        "is_banked",
+        "score"
+      ],
+      "dtypes": {
+        "id_assessment": "int64",
+        "id_student": "int64",
+        "date_submitted": "int64",
+        "is_banked": "int64",
+        "score": "float64"
+      },
+      "null_rates": {
+        "id_assessment": 0.0,
+        "id_student": 0.0,
+        "date_submitted": 0.0,
+        "is_banked": 0.0,
+        "score": 0.000995
+      },
+      "date_submitted_min": -11,
+      "date_submitted_max": 608,
+      "date_submitted_negative_rows": 2057,
+      "table": "studentAssessment",
+      "description": "One row per learner submission.",
+      "declared_required_columns": [
+        "id_assessment",
+        "id_student",
+        "date_submitted",
+        "is_banked",
+        "score"
+      ],
+      "missing_required_columns": []
+    },
+    {
+      "filename": "studentVle.csv",
+      "rows": 10655280,
+      "columns": [
+        "code_module",
+        "code_presentation",
+        "id_student",
+        "id_site",
+        "date",
+        "sum_click"
+      ],
+      "dtypes": {
+        "code_module": "str",
+        "code_presentation": "str",
+        "id_student": "int64",
+        "id_site": "int64",
+        "date": "int64",
+        "sum_click": "int64"
+      },
+      "null_rates": {
+        "code_module": 0.0,
+        "code_presentation": 0.0,
+        "id_student": 0.0,
+        "id_site": 0.0,
+        "date": 0.0,
+        "sum_click": 0.0
+      },
+      "date_min": -25,
+      "date_max": 269,
+      "date_negative_rows": 688988,
+      "table": "studentVle",
+      "description": "Daily learner interactions with VLE activities.",
+      "declared_required_columns": [
+        "code_module",
+        "code_presentation",
+        "id_student",
+        "id_site",
+        "date",
+        "sum_click"
+      ],
+      "missing_required_columns": []
+    }
+  ],
+  "cohort": {
+    "learner_course_records": 32593,
+    "distinct_learners": 28785,
+    "course_presentations": 22,
+    "distinct_modules": 7,
+    "outcome_counts": {
+      "Pass": 12361,
+      "Withdrawn": 10156,
+      "Fail": 7052,
+      "Distinction": 3024
+    },
+    "outcome_share": {
+      "Pass": 0.379253,
+      "Withdrawn": 0.311601,
+      "Fail": 0.216365,
+      "Distinction": 0.092781
+    },
+    "unexpected_outcome_labels": [],
+    "duplicate_learner_course_rows": 0
+  },
+  "assessment_calendar": {
+    "total_assessments": 206,
+    "assessments_with_due_date": 195,
+    "assessments_without_due_date": 11,
+    "due_date_coverage": 0.946602,
+    "types": {
+      "TMA": 106,
+      "CMA": 76,
+      "Exam": 24
+    },
+    "due_date_by_type": {
+      "CMA": {
+        "total": 76,
+        "with_due_date": 76
+      },
+      "Exam": {
+        "total": 24,
+        "with_due_date": 13
+      },
+      "TMA": {
+        "total": 106,
+        "with_due_date": 106
+      }
+    }
+  },
+  "warnings": [
+    "Only 94.7% of assessments carry a due date. Lateness is computed on that subset only and is reported as unavailable elsewhere; no due dates are imputed."
+  ]
+}

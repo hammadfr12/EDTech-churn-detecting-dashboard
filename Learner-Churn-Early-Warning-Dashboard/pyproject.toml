@@ -1,0 +1,16 @@
+[project]
+name = "learner-churn-early-warning-dashboard"
+version = "1.0.0"
+description = "Leakage-safe learner churn early-warning dashboard on OULAD (SQL + Python + Streamlit)"
+requires-python = ">=3.11"
+readme = "README.md"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q --strict-markers"
+filterwarnings = [
+    "ignore::UserWarning:sklearn.*",
+]
+
+[tool.setuptools]
+packages = ["src"]

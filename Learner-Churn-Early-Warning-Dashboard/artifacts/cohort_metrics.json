@@ -1,0 +1,553 @@
+{
+  "generated_by": "src.features.build",
+  "data_dir": "/Users/hammad.khan/Desktop/Learner-Churn-Early-Warning-Dashboard/data/raw",
+  "cutoff_weeks_built": [
+    3,
+    4
+  ],
+  "default_cutoff_week": 4,
+  "week_mapping": "week = floor(day / 7) + 1 for day >= 0; day 0 is week 1. Negative days are pre-course activity, reported separately and excluded from the weekly series.",
+  "grain": {
+    "stg_student_info": {
+      "rows": 32593,
+      "duplicate_key_rows": 0,
+      "key": "code_module, code_presentation, id_student"
+    },
+    "learner_week_matrix": {
+      "rows": 28303,
+      "duplicate_key_rows": 0,
+      "key": "code_module, code_presentation, id_student"
+    },
+    "cohort_outcomes": {
+      "rows": 32593,
+      "duplicate_key_rows": 0,
+      "key": "code_module, code_presentation, id_student"
+    },
+    "weekly_cohort_activity": {
+      "rows": 550,
+      "duplicate_key_rows": 0,
+      "key": "code_module, code_presentation, week"
+    }
+  },
+  "cohort": {
+    "learner_course_records": 32593,
+    "outcome_counts": {
+      "Pass": 12361,
+      "Withdrawn": 10156,
+      "Fail": 7052,
+      "Distinction": 3024
+    },
+    "presentations": [
+      {
+        "code_module": "AAA",
+        "code_presentation": "2013J",
+        "learners": 383
+      },
+      {
+        "code_module": "AAA",
+        "code_presentation": "2014J",
+        "learners": 365
+      },
+      {
+        "code_module": "BBB",
+        "code_presentation": "2013B",
+        "learners": 1767
+      },
+      {
+        "code_module": "BBB",
+        "code_presentation": "2013J",
+        "learners": 2237
+      },
+      {
+        "code_module": "BBB",
+        "code_presentation": "2014B",
+        "learners": 1613
+      },
+      {
+        "code_module": "BBB",
+        "code_presentation": "2014J",
+        "learners": 2292
+      },
+      {
+        "code_module": "CCC",
+        "code_presentation": "2014B",
+        "learners": 1936
+      },
+      {
+        "code_module": "CCC",
+        "code_presentation": "2014J",
+        "learners": 2498
+      },
+      {
+        "code_module": "DDD",
+        "code_presentation": "2013B",
+        "learners": 1303
+      },
+      {
+        "code_module": "DDD",
+        "code_presentation": "2013J",
+        "learners": 1938
+      },
+      {
+        "code_module": "DDD",
+        "code_presentation": "2014B",
+        "learners": 1228
+      },
+      {
+        "code_module": "DDD",
+        "code_presentation": "2014J",
+        "learners": 1803
+      },
+      {
+        "code_module": "EEE",
+        "code_presentation": "2013J",
+        "learners": 1052
+      },
+      {
+        "code_module": "EEE",
+        "code_presentation": "2014B",
+        "learners": 694
+      },
+      {
+        "code_module": "EEE",
+        "code_presentation": "2014J",
+        "learners": 1188
+      },
+      {
+        "code_module": "FFF",
+        "code_presentation": "2013B",
+        "learners": 1614
+      },
+      {
+        "code_module": "FFF",
+        "code_presentation": "2013J",
+        "learners": 2283
+      },
+      {
+        "code_module": "FFF",
+        "code_presentation": "2014B",
+        "learners": 1500
+      },
+      {
+        "code_module": "FFF",
+        "code_presentation": "2014J",
+        "learners": 2365
+      },
+      {
+        "code_module": "GGG",
+        "code_presentation": "2013J",
+        "learners": 952
+      },
+      {
+        "code_module": "GGG",
+        "code_presentation": "2014B",
+        "learners": 833
+      },
+      {
+        "code_module": "GGG",
+        "code_presentation": "2014J",
+        "learners": 749
+      }
+    ],
+    "weekly_activity": [
+      {
+        "week": 1,
+        "active_learners": 23658.0,
+        "learners_enrolled": 32593.0,
+        "weekly_active_rate": 0.7258613812781886,
+        "prev_active": NaN,
+        "net_change": NaN,
+        "dropoff_rate": NaN
+      },
+      {
+        "week": 2,
+        "active_learners": 23168.0,
+        "learners_enrolled": 32593.0,
+        "weekly_active_rate": 0.710827478292885,
+        "prev_active": 23658.0,
+        "net_change": 490.0,
+        "dropoff_rate": 0.02071180995857638
+      },
+      {
+        "week": 3,
+        "active_learners": 23822.0,
+        "learners_enrolled": 32593.0,
+        "weekly_active_rate": 0.7308931365630656,
+        "prev_active": 23168.0,
+        "net_change": -654.0,
+        "dropoff_rate": -0.028228591160220994
+      },
+      {
+        "week": 4,
+        "active_learners": 22135.0,
+        "learners_enrolled": 32593.0,
+        "weekly_active_rate": 0.6791335562850919,
+        "prev_active": 23822.0,
+        "net_change": 1687.0,
+        "dropoff_rate": 0.07081689194861893
+      },
+      {
+        "week": 5,
+        "active_learners": 21661.0,
+        "learners_enrolled": 32593.0,
+        "weekly_active_rate": 0.6645905562544104,
+        "prev_active": 22135.0,
+        "net_change": 474.0,
+        "dropoff_rate": 0.021414050146826295
+      },
+      {
+        "week": 6,
+        "active_learners": 20361.0,
+        "learners_enrolled": 32593.0,
+        "weekly_active_rate": 0.6247046911913601,
+        "prev_active": 21661.0,
+        "net_change": 1300.0,
+        "dropoff_rate": 0.06001569641290799
+      },
+      {
+        "week": 7,
+        "active_learners": 20237.0,
+        "learners_enrolled": 32593.0,
+        "weekly_active_rate": 0.6209001932930384,
+        "prev_active": 20361.0,
+        "net_change": 124.0,
+        "dropoff_rate": 0.006090074161386965
+      },
+      {
+        "week": 8,
+        "active_learners": 19888.0,
+        "learners_enrolled": 32593.0,
+        "weekly_active_rate": 0.6101923725953425,
+        "prev_active": 20237.0,
+        "net_change": 349.0,
+        "dropoff_rate": 0.017245639175767158
+      },
+      {
+        "week": 9,
+        "active_learners": 18390.0,
+        "learners_enrolled": 32593.0,
+        "weekly_active_rate": 0.5642315834688431,
+        "prev_active": 19888.0,
+        "net_change": 1498.0,
+        "dropoff_rate": 0.0753218020917136
+      },
+      {
+        "week": 10,
+        "active_learners": 17559.0,
+        "learners_enrolled": 32593.0,
+        "weekly_active_rate": 0.5387353112631547,
+        "prev_active": 18390.0,
+        "net_change": 831.0,
+        "dropoff_rate": 0.045187601957585644
+      },
+      {
+        "week": 11,
+        "active_learners": 14544.0,
+        "learners_enrolled": 32593.0,
+        "weekly_active_rate": 0.44623078575154174,
+        "prev_active": 17559.0,
+        "net_change": 3015.0,
+        "dropoff_rate": 0.1717068170169144
+      },
+      {
+        "week": 12,
+        "active_learners": 13660.0,
+        "learners_enrolled": 32593.0,
+        "weekly_active_rate": 0.4191083975086675,
+        "prev_active": 14544.0,
+        "net_change": 884.0,
+        "dropoff_rate": 0.06078107810781078
+      },
+      {
+        "week": 13,
+        "active_learners": 16232.0,
+        "learners_enrolled": 32593.0,
+        "weekly_active_rate": 0.4980210474641794,
+        "prev_active": 13660.0,
+        "net_change": -2572.0,
+        "dropoff_rate": -0.1882869692532943
+      },
+      {
+        "week": 14,
+        "active_learners": 16948.0,
+        "learners_enrolled": 32593.0,
+        "weekly_active_rate": 0.519988954683521,
+        "prev_active": 16232.0,
+        "net_change": -716.0,
+        "dropoff_rate": -0.044110399211434205
+      },
+      {
+        "week": 15,
+        "active_learners": 16365.0,
+        "learners_enrolled": 32593.0,
+        "weekly_active_rate": 0.5021016782744762,
+        "prev_active": 16948.0,
+        "net_change": 583.0,
+        "dropoff_rate": 0.03439933915506255
+      },
+      {
+        "week": 16,
+        "active_learners": 16515.0,
+        "learners_enrolled": 32593.0,
+        "weekly_active_rate": 0.5067038934740589,
+        "prev_active": 16365.0,
+        "net_change": -150.0,
+        "dropoff_rate": -0.00916590284142988
+      },
+      {
+        "week": 17,
+        "active_learners": 15988.0,
+        "learners_enrolled": 32593.0,
+        "weekly_active_rate": 0.4905347774061915,
+        "prev_active": 16515.0,
+        "net_change": 527.0,
+        "dropoff_rate": 0.031910384498940354
+      },
+      {
+        "week": 18,
+        "active_learners": 16152.0,
+        "learners_enrolled": 32593.0,
+        "weekly_active_rate": 0.49556653269106865,
+        "prev_active": 15988.0,
+        "net_change": -164.0,
+        "dropoff_rate": -0.010257693269952465
+      },
+      {
+        "week": 19,
+        "active_learners": 16190.0,
+        "learners_enrolled": 32593.0,
+        "weekly_active_rate": 0.49673242720829625,
+        "prev_active": 16152.0,
+        "net_change": -38.0,
+        "dropoff_rate": -0.0023526498266468548
+      },
+      {
+        "week": 20,
+        "active_learners": 15424.0,
+        "learners_enrolled": 32593.0,
+        "weekly_active_rate": 0.47323044825576044,
+        "prev_active": 16190.0,
+        "net_change": 766.0,
+        "dropoff_rate": 0.04731315626930204
+      },
+      {
+        "week": 21,
+        "active_learners": 15443.0,
+        "learners_enrolled": 32593.0,
+        "weekly_active_rate": 0.47381339551437424,
+        "prev_active": 15424.0,
+        "net_change": -19.0,
+        "dropoff_rate": -0.0012318464730290456
+      },
+      {
+        "week": 22,
+        "active_learners": 15577.0,
+        "learners_enrolled": 32593.0,
+        "weekly_active_rate": 0.4779247077593348,
+        "prev_active": 15443.0,
+        "net_change": -134.0,
+        "dropoff_rate": -0.008677070517386518
+      },
+      {
+        "week": 23,
+        "active_learners": 14998.0,
+        "learners_enrolled": 32593.0,
+        "weekly_active_rate": 0.4601601570889455,
+        "prev_active": 15577.0,
+        "net_change": 579.0,
+        "dropoff_rate": 0.037170186813892274
+      },
+      {
+        "week": 24,
+        "active_learners": 14912.0,
+        "learners_enrolled": 32593.0,
+        "weekly_active_rate": 0.45752155370785136,
+        "prev_active": 14998.0,
+        "net_change": 86.0,
+        "dropoff_rate": 0.005734097879717296
+      },
+      {
+        "week": 25,
+        "active_learners": 13628.0,
+        "learners_enrolled": 32593.0,
+        "weekly_active_rate": 0.41812659159942317,
+        "prev_active": 14912.0,
+        "net_change": 1284.0,
+        "dropoff_rate": 0.08610515021459228
+      }
+    ],
+    "steepest_dropoff_weeks": [
+      {
+        "week": 11,
+        "active_learners": 14544.0,
+        "learners_enrolled": 32593.0,
+        "weekly_active_rate": 0.44623078575154174,
+        "prev_active": 17559.0,
+        "net_change": 3015.0,
+        "dropoff_rate": 0.1717068170169144
+      },
+      {
+        "week": 25,
+        "active_learners": 13628.0,
+        "learners_enrolled": 32593.0,
+        "weekly_active_rate": 0.41812659159942317,
+        "prev_active": 14912.0,
+        "net_change": 1284.0,
+        "dropoff_rate": 0.08610515021459228
+      },
+      {
+        "week": 9,
+        "active_learners": 18390.0,
+        "learners_enrolled": 32593.0,
+        "weekly_active_rate": 0.5642315834688431,
+        "prev_active": 19888.0,
+        "net_change": 1498.0,
+        "dropoff_rate": 0.0753218020917136
+      },
+      {
+        "week": 4,
+        "active_learners": 22135.0,
+        "learners_enrolled": 32593.0,
+        "weekly_active_rate": 0.6791335562850919,
+        "prev_active": 23822.0,
+        "net_change": 1687.0,
+        "dropoff_rate": 0.07081689194861893
+      },
+      {
+        "week": 12,
+        "active_learners": 13660.0,
+        "learners_enrolled": 32593.0,
+        "weekly_active_rate": 0.4191083975086675,
+        "prev_active": 14544.0,
+        "net_change": 884.0,
+        "dropoff_rate": 0.06078107810781078
+      }
+    ]
+  },
+  "snapshot_shapes": {
+    "3": {
+      "rows": 32593,
+      "columns": 54
+    },
+    "4": {
+      "rows": 32593,
+      "columns": 56
+    }
+  },
+  "snapshot_columns": {
+    "3": [
+      "code_module",
+      "code_presentation",
+      "id_student",
+      "final_result",
+      "gender",
+      "region",
+      "highest_education",
+      "imd_band",
+      "age_band",
+      "num_of_prev_attempts",
+      "studied_credits",
+      "disability",
+      "module_presentation_length",
+      "clicks_w1",
+      "clicks_w2",
+      "clicks_w3",
+      "active_days_w1",
+      "active_days_w2",
+      "active_days_w3",
+      "pre_course_clicks",
+      "pre_course_active_days",
+      "last_active_day_in_window",
+      "last_active_week_in_window",
+      "assessments_due_by_cutoff",
+      "assessments_due_with_date",
+      "weight_due_by_cutoff",
+      "submitted_by_cutoff",
+      "banked_submissions",
+      "mean_score",
+      "min_score",
+      "max_score",
+      "mean_assessment_weight",
+      "lateness_observations",
+      "mean_lateness_days",
+      "max_lateness_days",
+      "late_submissions",
+      "on_time_submissions",
+      "last_submission_day",
+      "first_submission_day",
+      "first_score",
+      "latest_score",
+      "score_delta",
+      "overdue_count",
+      "total_clicks_to_cutoff",
+      "total_active_days_to_cutoff",
+      "clicks_per_active_day",
+      "click_delta",
+      "active_days_delta",
+      "click_slope",
+      "days_since_last_activity",
+      "submission_rate",
+      "has_no_score_by_cutoff",
+      "has_no_submission_by_cutoff",
+      "lateness_unavailable"
+    ],
+    "4": [
+      "code_module",
+      "code_presentation",
+      "id_student",
+      "final_result",
+      "gender",
+      "region",
+      "highest_education",
+      "imd_band",
+      "age_band",
+      "num_of_prev_attempts",
+      "studied_credits",
+      "disability",
+      "module_presentation_length",
+      "clicks_w1",
+      "clicks_w2",
+      "clicks_w3",
+      "clicks_w4",
+      "active_days_w1",
+      "active_days_w2",
+      "active_days_w3",
+      "active_days_w4",
+      "pre_course_clicks",
+      "pre_course_active_days",
+      "last_active_day_in_window",
+      "last_active_week_in_window",
+      "assessments_due_by_cutoff",
+      "assessments_due_with_date",
+      "weight_due_by_cutoff",
+      "submitted_by_cutoff",
+      "banked_submissions",
+      "mean_score",
+      "min_score",
+      "max_score",
+      "mean_assessment_weight",
+      "lateness_observations",
+      "mean_lateness_days",
+      "max_lateness_days",
+      "late_submissions",
+      "on_time_submissions",
+      "last_submission_day",
+      "first_submission_day",
+      "first_score",
+      "latest_score",
+      "score_delta",
+      "overdue_count",
+      "total_clicks_to_cutoff",
+      "total_active_days_to_cutoff",
+      "clicks_per_active_day",
+      "click_delta",
+      "active_days_delta",
+      "click_slope",
+      "days_since_last_activity",
+      "submission_rate",
+      "has_no_score_by_cutoff",
+      "has_no_submission_by_cutoff",
+      "lateness_unavailable"
+    ]
+  }
+}

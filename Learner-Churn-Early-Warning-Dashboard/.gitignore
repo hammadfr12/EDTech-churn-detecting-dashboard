@@ -1,0 +1,40 @@
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Raw dataset - never committed (450 MB, redistributed under OULAD's own terms)
+data/raw/*
+!data/raw/.gitkeep
+
+# Generated intermediates
+data/processed/*
+!data/processed/.gitkeep
+
+# Local intervention database
+*.sqlite
+*.sqlite3
+
+# Generated model + large artifacts.
+# metrics JSON and the build report ARE committed: they are the evidence the
+# README quotes, and they are small.
+artifacts/*.parquet
+artifacts/*.joblib
+artifacts/*.csv
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Streamlit
+.streamlit/secrets.toml
